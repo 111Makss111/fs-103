@@ -1,0 +1,106 @@
+body {
+font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+
+    height: 5162px;
+    background: #FAFAFA;
+}
+.header {
+    display: inline-flex;
+    padding: 24px 0px 32px 0px;
+    align-items: center;
+    gap: 413px;
+    }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.header-icon {
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+}
+.header-icon-italic{
+    font-style: italic;
+    
+}
+.header-list {
+}
+.header-link {
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14; 
+    letter-spacing: -0.02em;
+}
+.header-item {
+}
+    /* <!-- --------------HEADER----------------- --> */
+.main {
+   
+
+}
+.main-section { 
+    border-radius: 30px;
+    background: rgba(17, 17, 17, 0.60);
+    display: flex;
+    
+    height: 600px;
+    padding: 381px 40px 40px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.main-title {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    height: 102px;
+    flex-shrink: 0;
+}
+.main-btn {
+    display: flex;
+    padding: 14px 40px;
+    align-items: flex-start;
+    gap: 14px;
+    cursor: pointer;
+    border-radius: 100px;
+    background: #FD9222;
+}
+.main-item {
+    display: flex;
+    padding: 14px 40px;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.main-link {
+    display: flex;
+    padding: 14px 40px;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.29; 
+    letter-spacing: -0.02em;
+}
+    /* <!-- --------------------MAIN-------------------- --> */

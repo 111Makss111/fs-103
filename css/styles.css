@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  background: #fafafa;
 }
 button {
   cursor: pointer;
@@ -53,11 +54,13 @@ ul {
 .header-menu {
   display: flex;
   gap: 24px;
+  align-items: center;
 }
 .header-menu-address {
   display: flex;
   margin-left: auto;
   gap: 14px;
+  align-items: center;
 }
 .header-icon {
   color: #111;
@@ -65,7 +68,9 @@ ul {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.03em;
+  display: flex;
   align-items: center;
+  gap: 4px;
 }
 .header-icon:hover {
   color: #fd9222;
@@ -99,6 +104,9 @@ ul {
 .hero-section {
   padding-bottom: 50px;
 }
+.btn {
+  display: flex;
+}
 .hero-conteiner {
   background-color: rgba(17, 17, 17, 0.6);
   max-width: 1164px;
@@ -119,7 +127,6 @@ ul {
   max-width: 484px;
 }
 .hero-btn {
-  display: flex;
   padding: 14px 40px;
   align-items: flex-start;
   gap: 14px;
@@ -133,7 +140,6 @@ ul {
   border: none;
 }
 .hero-item {
-  display: flex;
   padding: 14px 40px;
   align-items: flex-start;
   gap: 14px;
@@ -145,6 +151,7 @@ ul {
   border-radius: 100px;
   border: 0.1px solid #fff;
   margin-left: 14px;
+  background-color: transparent;
 }
 .hero-link {
   color: #fff;
@@ -159,9 +166,11 @@ ul {
 /* <!-- --------------------Projects-------------------- --> */
 
 .projects {
+  background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .projects-conteiner {
-  background-color: #1e1823;
 }
 
 .visually-hidden {
@@ -176,29 +185,38 @@ ul {
 }
 .projects-list {
   display: flex;
-  padding: 50px 50px;
+  gap: 88px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.projects-list-item {
+  width: calc((100% - 2 * 88px) / 3);
 }
 .projects-title {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 18px;
 }
 
 .projects-text {
   color: rgba(255, 255, 255, 0.7);
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
 /* <!-- --------------------Projects-------------------- --> */
-/* <!-- --------------------excertional-------------------- --> */
-.excertional {
+/* <!-- --------------------teste-------------------- --> */
+.teste {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-.excertional-title {
+.teste-section-title {
+  color: #fd9222;
+}
+.teste-title {
   color: #111;
   text-align: center;
   font-size: 24px;
@@ -206,29 +224,53 @@ ul {
   line-height: 1.16;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  max-width: 412px;
+  margin: 0 auto 28px;
 }
-.excertional-text {
+.teste-text {
   color: #111;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.02em;
+  max-width: 486px;
+  margin: 0 auto 50px;
 }
-.excertional-item {
+.teste-item {
+  display: flex;
+  column-gap: 32px;
+  row-gap: 24px;
+  flex-wrap: wrap;
 }
-.excertional-list {
+.teste-list:nth-child(2n + 1) {
+  width: calc((100% - 3 * 32px) / 4);
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  padding: 18px;
+  background: #fff;
 }
-.excertional-title-text {
+.teste-title-text {
   color: #111;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.29;
   letter-spacing: -0.02;
 }
-/* <!-- --------------------excertional-------------------- --> */
+.teste-img {
+}
+/* <!-- --------------------teste-------------------- --> */
 /* <!-- --------------------made-------------------- --> */
 .made {
+  padding-bottom: 120px;
+}
+.made-conteiner {
+  display: flex;
+  background: #fff;
+}
+.made-wrap {
+  padding: 32px;
+  margin-left: 20px;
 }
 .made-title {
   color: #111;
@@ -238,6 +280,7 @@ ul {
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 .made-img {
 }
@@ -246,11 +289,14 @@ ul {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 28px;
+  max-width: 350px;
 }
 .made-item {
   list-style: outside;
 }
 .made-list {
+  margin-bottom: 24px;
 }
 .made-text {
   color: #111;
@@ -262,6 +308,9 @@ ul {
 /* <!-- ------------------------------- -->
         <!-- --------------------PRODUCTS-------------------- --> */
 .products {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 120px;
 }
 .products-title {
   color: #111;
@@ -273,8 +322,14 @@ ul {
   text-transform: uppercase;
 }
 .products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 18px;
 }
 .products-list-item {
+  padding: 32px 20px 8px 20px;
+  width: calc((100% - 3 * 18px) / 4);
+  background: #fff;
 }
 .products-title-text {
   color: #111;
@@ -283,6 +338,7 @@ ul {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  text-align: center;
 }
 .products-text {
   color: rgba(17, 17, 17, 0.7);
@@ -290,28 +346,27 @@ ul {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 18px;
 }
 .products-btn {
   display: flex;
-  width: 94px;
-  padding: 8px 20px;
-  align-items: flex-start;
-  gap: 14px;
-  display: flex;
-  width: 94px;
-  padding: 8px 20px;
-  align-items: flex-start;
-  gap: 14px;
   color: #111;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
+  margin: 0 auto;
+  padding: 8px 20px;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fafafa;
 }
 /* <!-- ------------------------------- -->
         <!-- --------------------Sellers-------------------- --> */
 .sellers {
+  padding-bottom: 120px;
 }
 .sellers-title {
   color: #111;
@@ -321,10 +376,15 @@ ul {
   line-height: 1.17;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 .sellers-list {
+  display: flex;
+  gap: 16px;
 }
 .sellers-item-list {
+  width: calc((100% - 2 * 16px) / 3);
+  background: #fff;
 }
 .sellers-title-text {
   color: #111;
@@ -334,11 +394,16 @@ ul {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  text-align: center;
+  margin: 28px 0;
 }
 
 /* <!-- ------------------------------- -->
         <!-- --------------------loved-------------------- --> */
 .loved {
+  padding-bottom: 120px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .loved-title {
   color: #111;
@@ -348,10 +413,15 @@ ul {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 50px;
 }
 .loved-list {
+  display: flex;
+  gap: 28px;
 }
 .loved-list-item {
+  width: calc((100% - 2 * 28px) / 3);
+  background: #fff;
 }
 .loved-title-text {
   color: #111;
@@ -367,39 +437,30 @@ ul {
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  margin: 32px 0;
 }
 .loved-btn {
   border-radius: 100px;
   border: 1px solid #fd9222;
-  display: flex;
-  width: 222px;
-  height: 50px;
   padding: 14px 40px;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 14px;
-  flex-shrink: 0;
   color: #111;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 50px;
 }
+/* <!-- --------------------loved-------------------- --> */
+*/
+    /* <!-- --------------------futer-------------------- --> */
+
 .futer-form {
   border-radius: 30px;
   border: 1.5px solid rgba(255, 255, 255, 0.15);
-  display: flex;
-  width: 313px;
-  height: 52px;
   padding: 14px 24px;
-  align-items: flex-start;
-  gap: 40px;
-  display: flex;
-  align-items: center;
-  gap: 21.78px;
-  flex: 1 0 0;
-  align-self: stretch;
 }
 .futer {
   background: #1e1823;

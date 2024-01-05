@@ -479,8 +479,12 @@ ul {
   text-align: center;
 }
 .futer-list {
+  display: flex;
+
+  gap: 14px;
 }
 .futer-list-item {
+  display: flex;
 }
 .futer-item {
 }
@@ -499,6 +503,7 @@ ul {
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.02em;
+  margin-bottom: 5px;
 }
 .futer-navigator {
 }
@@ -520,6 +525,7 @@ ul {
   border-radius: 100px;
   background: #fd9222;
   padding: 17px 40px;
+  margin-left: 8px;
 }
 .futer-text {
   color: #fff;
@@ -527,6 +533,7 @@ ul {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
+  margin-bottom: 14px;
 }
 .futer-img {
 }
